@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Resource Page
+Template Name: GDR ~ Resource Page
 Description: This part is optional, but helpful for describing the Post Template
 */
 ?>
