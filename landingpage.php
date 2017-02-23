@@ -20,14 +20,6 @@ get_header();
   font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
 .container {
   max-width: 1470px;
 }
@@ -41,6 +33,7 @@ get_header();
   border-radius: 25px 0px 25px 0px;
   padding: 50px 15px 60px 15px;
   margin-bottom: 30px;
+  background-color: #fff;
 }
 
 .fa-download {
@@ -67,17 +60,8 @@ get_header();
 .btn-download.active {
   background-color: #ebebeb;
   border-color: #ebebeb;
-  
   color: #337ab7;
 }
-
-
-
-
-
-
-
-
 
 /*tab responsive*/
 .responsive-tabs {
@@ -87,7 +71,7 @@ get_header();
 .responsive-tabs-container .tab-content {
   padding: 30px 15px;
   border:1px solid #ddd;
-  border-top:none;
+  border-top: none;
   border-radius: 0 0 25px 0;
 }
 
@@ -178,59 +162,27 @@ get_header();
 }
 
 @media (max-width: 767px) {
-.responsive-tabs-container .tab-content {
-  padding: 30px 0px;
-  border:0px solid #ddd;
-  border-top:none;
+  .responsive-tabs-container .tab-content {
+    padding: 30px 0px;
+    border:0px solid #ddd;
+    border-top:none;
+  }
 }
+.widget {
+  display: inline;
 }
 </style>
-<div class="container margin-top">
 
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="bruxzir.html">
-        <div class="box-br">
-          <img src="http://gdresources.wpengine.com/wp-content/uploads/2017/01/logo-bruxzir-solid-zirconia-crowns-bridges.png" class="img-responsive center-block">
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-4">
-      <a href="bruxzir.html">
-        <div class="box-br">
-          <img src="http://gdresources.wpengine.com/wp-content/uploads/2017/01/logo-inclusive-dental-implant-system.png" class="img-responsive center-block">
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-4">
-      <a href="bruxzir.html">
-        <div class="box-br">
-          <img src="http://gdresources.wpengine.com/wp-content/uploads/2017/01/logo-comfort-hard-soft-bite-splint.png" class="img-responsive center-block">
-        </div>
-      </a>
+<!-- Start: homepage -->
+<section class="homepage">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <?php dynamic_sidebar( 'main_wid' ); ?>
+      </div>
     </div>
   </div>
-  
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="bruxzir.html">
-        <div class="box-br">
-          <img src="http://gdresources.wpengine.com/wp-content/uploads/2017/01/logo-prismatik-dentalcraft.png" class="img-responsive center-block">
-        </div>
-      </a>
-    </div>
-    
-    <div class="col-sm-4">
-      <a href="bruxzir.html">
-        <div class="box-br">
-          <img src="http://gdresources.wpengine.com/wp-content/uploads/2017/01/logo-hahn-tapered-implant.png" class="img-responsive center-block">
-        </div>
-      </a>
-    </div>
-  </div>
-  
-</div>
+</section>
+<!-- End: homepage -->
  
 <?php get_footer(); ?>

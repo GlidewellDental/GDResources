@@ -16,37 +16,18 @@
 			<section class="head-banner">
 				<div class="container">
 					<div class="row">
-						 <div class="col-sm-12">
+						 <div class="col-md-4 col-sm-12">
 						 	<a href="#">
-						 		<img src="http://dummyimage.com/200x100/f00/fff" class="img-responsive">
+						 		<img src="http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/logo-glidewell-resources.png" class="img-responsive glidewell-resources">
 						 	</a>
+						 </div>
+						 <div class="col-md-8">
+							 <div style="text-align: right;">
+							 	<a href="#">Log Out</a> | <a href="#">Contact Us</a>
+							 </div>
 						 </div>
 					</div>
 				</div>
 			</section>
 			<!-- End: head-banner -->
-			<nav>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12">
-							<nav class="navbar navbar-default" role="navigation">
-							    <div class="container-fluid">
-							        <!-- Brand and toggle get grouped for better mobile display -->
-							        <div class="navbar-header">
-							            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							                <span class="sr-only">Toggle navigation</span>
-							                <span class="icon-bar"></span>
-							                <span class="icon-bar"></span>
-							                <span class="icon-bar"></span>
-							            </button>
-							        </div>
-							        <!-- Collect the nav links, forms, and other content for toggling -->
-							        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-										<?php wp_nav_menu( array( 'theme_location' => mainmenu, 'menu_class' => 'nav navbar-nav'  ) ); ?>
-									</div>
-								</div><!-- /.navbar-collapse -->
-							</nav>
-						</div>
-					</div>
-				</div>
-			</nav>
+			

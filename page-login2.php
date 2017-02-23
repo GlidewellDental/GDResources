@@ -39,8 +39,9 @@ get_header('clean');
     </style>
 		<div class="container" style="padding-top: 15%;">
 			<div class="row">
-		  		<div class="login-box col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+		  		<div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 		  				<div class="row">
+		  					<div class="login-box">
 			  				<div class="col-sm-12">
 			  					<img style="margin-bottom: 15px;" src="http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/logo-glidewell-resources.png" class="img-responsive glidewell-resources center-block">
 			  				</div>
@@ -60,6 +61,7 @@ get_header('clean');
 								</div>
 		      				</div>
 		  				</div>
+		  			</div>
 		  		</div>
 		  	</div>
 		</div>
