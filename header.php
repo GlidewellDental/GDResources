@@ -18,12 +18,12 @@
 					<div class="row">
 						 <div class="col-md-4 col-sm-12">
 						 	<a href="#">
-						 		<img src="http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/logo-glidewell-resources.png" class="img-responsive glidewell-resources">
+						 		<img src="http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/logo-glidewell-resources.png" class="img-responsive glidewell-resources" alt="Glidewell Resource Logo">
 						 	</a>
 						 </div>
 						 <div class="col-md-8">
 							 <div style="text-align: right;">
-							 	<a href="#">Log Out</a> | <a href="#">Contact Us</a>
+							 	<a href="#" alt="Log Out">Log Out</a> | <a href="#" alt="contact Us">Contact Us</a>
 							 </div>
 						 </div>
 					</div>

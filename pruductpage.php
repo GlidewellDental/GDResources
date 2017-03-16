@@ -176,10 +176,10 @@ li {
   background-color: #fff;
 }
 .nav-tabs>li>a {
-  color: #000;
-  cursor: default;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+    color: #000;
+    cursor: default;
+    border: 1px solid #ddd;
+    background-color: #eee;
 }
 li:hover {
   background-color: initial;
@@ -187,9 +187,28 @@ li:hover {
 .nav-tabs>li>a:active {
   color: #000;
 }
+.object {
+  margin-top: 15px;
+}
 </style>
+<?php get_template_part('include', 'headbanner'); ?>
+<!-- Start: text-stage -->
+<section class="text-stage">
+  <div class="container">
+    <div class="row">
+       <div class="col-sm-6">
+        <h1>Māui plants his hook at Hamakua</h1>
+        <p>In Hawaiian mythology, Māui is a culture hero and ancient chief who appears in several different genealogies. He is often characterized by his cunning and trickery. In the Ulu line he is the son of ʻAkalana and his wife Hinakawea. Māui is one of the Kupua. His name is cognate with the Hawaiian island Maui. Some of Maui’s most famous myths include how he helped slow the sun so people could have longer days, or how he fished up land masses with his great fish hook.</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="http://dummyimage.com/900x250/f00/fff" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End: text-stage -->
 <?php if( have_rows('resource_tab') ): ?>
-<div class="container margin-top">
+<div class="container">
   <div class="row">
     <div class="col-sm-12">
 
@@ -204,8 +223,12 @@ li:hover {
             while( have_rows('resource_tab') ):the_row();
             $tab = get_sub_field('tab_label');
             $index++;
+            $activate = ('active');
+            if($index !== 1) {
+              $activate = ('');
+            }
         ?>
-        <li><a href="#tab-<?php echo $index; ?>" data-toggle="tab"><?php echo $tab; ?></a></li>
+        <li class="<?php echo $activate; ?>"><a href="#tab-<?php echo $index; ?>" data-toggle="tab"><?php echo $tab; ?></a></li>
         <?php
             //optional
           endwhile; //if( get_sub_field('resource_tab') ):
@@ -214,13 +237,18 @@ li:hover {
         
         <?php 
         $tally = 0;
+        
         ?>
           <div class="tab-content">
           <?php
             while( have_rows('resource_tab') ):the_row();
           $tally++;
+          $activate = ('active');
+            if($tally !== 1) {
+              $activate = ('');
+            }
          ?> 
-        <div class="tab-pane" id="tab-<?php echo $tally; ?>">
+        <div class="tab-pane <?php echo $activate; ?>" id="tab-<?php echo $tally; ?>">
           <div class="row">
             <!-- Start Product Rotator -->
             <?php 
@@ -231,11 +259,13 @@ li:hover {
                   $link = get_sub_field('resource_link'); 
                   ?>
             <div class="col-sm-4">
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive">
-              <p><?php echo $title; ?></p>
-              <a class="btn btn-sm btn-download" href="<?php echo $link['url']; ?>" role="button">
-              <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
+              <div class="object">
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive">
+                <p><?php echo $title; ?></p>
+                <a class="btn btn-sm btn-download" href="<?php echo $link['url']; ?>" role="button">
+                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
+                </a>
+              </div>
             </div>
             <?php
               endwhile; //if( get_sub_field('tab_content') ):
