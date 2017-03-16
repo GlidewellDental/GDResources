@@ -169,402 +169,88 @@ get_header();
   border-top:none;
 }
 }
-</style>   
-
+li.active {
+    background-color: initial;
+}
+li {
+  background-color: #fff;
+}
+.nav-tabs>li>a {
+  color: #000;
+  cursor: default;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+li:hover {
+  background-color: initial;
+}
+.nav-tabs>li>a:active {
+  color: #000;
+}
+</style>
+<?php if( have_rows('resource_tab') ): ?>
 <div class="container margin-top">
   <div class="row">
     <div class="col-sm-12">
 
-      <ul class="nav nav-tabs responsive-tabs">
-        <li class="active"><a href="#product-images">Product Images</a></li>
-        <li><a href="#clinical-images">Clinical Images</a></li>
-        <li><a href="#logos">Logos</a></li>
-        <li><a href="#graphs">Graphs</a></li>
-        <li><a href="#brochures">Brochures</a></li>
-        <li><a href="#presentations">Presentations</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div class="tab-pane active" id="product-images">
-          <div class="row">
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>1 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-        
-        <div class="tab-pane" id="clinical-images">
-          <div class="row">
-            
-            Top of pane
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>1a All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="http://dummyimage.com/1200x1000/f00/fff" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-
-        <div class="tab-pane" id="logos">
-          <div class="row">
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>1 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-
-        <div class="tab-pane" id="graphs">
-          <div class="row">
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>1 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-        
-        <div class="tab-pane" id="brochures">
-          <div class="row">
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>1 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-        
-        <div class="tab-pane" id="presentations">
-          <div class="row">
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>1 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>2 All BruxZir Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>3 All BruxZir Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-          
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>4 All BruxZir Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>5 All BruxZir Blanks Blanks Blanks Blanks Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-            <div class="col-sm-4">
-              <img src="https://www.glidewelldirect.com/portals/0/Images/Resources/bruxzir/product-images/All-Blanks-a.jpg" class="img-responsive">
-              <p>6 All BruxZir Blanks</p>
-              <a class="btn btn-sm btn-download" href="http://yahoo.com" role="button">
-                <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
       
-    </div>
+      <ul class="nav nav-tabs responsive-tabs">
+      <?php 
+        $resource_tab = get_field('resource_tab');
+        $index = 0;
+       ?>
+        <?php 
+          
+            while( have_rows('resource_tab') ):the_row();
+            $tab = get_sub_field('tab_label');
+            $index++;
+        ?>
+        <li><a href="#tab-<?php echo $index; ?>" data-toggle="tab"><?php echo $tab; ?></a></li>
+        <?php
+            //optional
+          endwhile; //if( get_sub_field('resource_tab') ):
+        ?>  
+      </ul>
+        
+        <?php 
+        $tally = 0;
+        ?>
+          <div class="tab-content">
+          <?php
+            while( have_rows('resource_tab') ):the_row();
+          $tally++;
+         ?> 
+        <div class="tab-pane" id="tab-<?php echo $tally; ?>">
+          <div class="row">
+            <!-- Start Product Rotator -->
+            <?php 
+                if( have_rows('tab_content') ):
+                while( have_rows('tab_content') ):the_row(); 
+                  $title = get_sub_field('resource_title');
+                  $image = get_sub_field('resource_image');
+                  $link = get_sub_field('resource_link'); 
+                  ?>
+            <div class="col-sm-4">
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive">
+              <p><?php echo $title; ?></p>
+              <a class="btn btn-sm btn-download" href="<?php echo $link['url']; ?>" role="button">
+              <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> (RIGHT CLICK)
+              </a>
+            </div>
+            <?php
+              endwhile; //if( get_sub_field('tab_content') ):
+              endif; //if( get_sub_field('tab_content') ):?>
+          </div>
+        </div>
+      
+      <?php
+        endwhile; //if( get_sub_field('resource_tab') ): ?>
+        </div>
+          
+   </div> 
   </div>
 </div>
-
-<script>
-! function($) {
-    "use strict";
-    var a = {
-        accordionOn: ["xs"]
-    };
-    $.fn.responsiveTabs = function(e) {
-        var t = $.extend({}, a, e),
-            s = "";
-        return $.each(t.accordionOn, function(a, e) {
-            s += " accordion-" + e
-        }), this.each(function() {
-            var a = $(this),
-                e = a.find("> li > a"),
-                t = $(e.first().attr("href")).parent(".tab-content"),
-                i = t.children(".tab-pane");
-            a.add(t).wrapAll('<div class="responsive-tabs-container" />');
-            var n = a.parent(".responsive-tabs-container");
-            n.addClass(s), e.each(function(a) {
-                var t = $(this),
-                    s = t.attr("href"),
-                    i = "",
-                    n = "",
-                    r = "";
-                t.parent("li").hasClass("active") && (i = " active"), 0 === a && (n = " first"), a === e.length - 1 && (r = " last"), t.clone(!1).addClass("accordion-link" + i + n + r).insertBefore(s)
-            });
-            var r = t.children(".accordion-link");
-            e.on("click", function(a) {
-                a.preventDefault();
-                var e = $(this),
-                    s = e.parent("li"),
-                    n = s.siblings("li"),
-                    c = e.attr("href"),
-                    l = t.children('a[href="' + c + '"]');
-                s.hasClass("active") || (s.addClass("active"), n.removeClass("active"), i.removeClass("active"), $(c).addClass("active"), r.removeClass("active"), l.addClass("active"))
-            }), r.on("click", function(t) {
-                t.preventDefault();
-                var s = $(this),
-                    n = s.attr("href"),
-                    c = a.find('li > a[href="' + n + '"]').parent("li");
-                s.hasClass("active") || (r.removeClass("active"), s.addClass("active"), i.removeClass("active"), $(n).addClass("active"), e.parent("li").removeClass("active"), c.addClass("active"))
-            })
-        })
-    }
-}(jQuery);
-
-
-$('.responsive-tabs').responsiveTabs({
-                         accordionOn: ['xs', 'sm']
-                  });
-</script>    
+<?php endif; //if( get_sub_field('resource_tab') ): ?>
+<script type="text/javascript" src="http://gdresources.staging.wpengine.com/wp-content/themes/mauitoolbox/js/tab-responsive.js"></script> 
  
 <?php get_footer(); ?>
