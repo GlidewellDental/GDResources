@@ -9,6 +9,9 @@ Description: This part is optional, but helpful for describing the Post Template
 
 get_header();
 
+$h1title = get_field('h1title');
+$paragraph = get_field('paragraph');
+
 ?>
 <style>
 /*overwrite bootstrap*/
@@ -197,8 +200,8 @@ li:hover {
   <div class="container">
     <div class="row">
        <div class="col-sm-6">
-        <h1>Māui plants his hook at Hamakua</h1>
-        <p>In Hawaiian mythology, Māui is a culture hero and ancient chief who appears in several different genealogies. He is often characterized by his cunning and trickery. In the Ulu line he is the son of ʻAkalana and his wife Hinakawea. Māui is one of the Kupua. His name is cognate with the Hawaiian island Maui. Some of Maui’s most famous myths include how he helped slow the sun so people could have longer days, or how he fished up land masses with his great fish hook.</p>
+        <h1><?php echo $h1title; ?></h1>
+        <?php echo $paragraph; ?>
       </div>
       <div class="col-sm-6">
         <img src="http://dummyimage.com/900x250/f00/fff" class="img-responsive">

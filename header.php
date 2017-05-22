@@ -24,6 +24,8 @@
 						 <div class="col-md-8">
 							 <div style="text-align: right;">
 							 	<a href="#" alt="Log Out">Log Out</a> | <a href="#" alt="contact Us">Contact Us</a>
+							 	<br>
+							 	<?php custom_breadcrumbs(); ?>
 							 </div>
 						 </div>
 					</div>

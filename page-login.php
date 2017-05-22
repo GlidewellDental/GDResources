@@ -12,30 +12,30 @@
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css">   
 
-		<style>
-    body {
-      background-image: url(http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/body-back2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-    
-    .login-box {
-      background: rgba(255, 255, 255, 0.5);
-      padding: 30px;
-      filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#E6FFFFFF', endColorstr='#E6FFFFFF');
-      z-index: 999999999;
-      -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      -ms-border-radius: 6px;
-      -o-border-radius: 6px;
-      border-radius: 6px;
-      overflow: hidden;
-      zoom: 1;
-    }
+	<style>
+	    body {
+	      background-image: url(http://gdresources.staging.wpengine.com/wp-content/uploads/2017/02/body-back2.jpg);
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	      background-position: center center;
+	    }
+	    
+	    .login-box {
+	      background: rgba(255, 255, 255, 0.5);
+	      padding: 30px;
+	      filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#E6FFFFFF', endColorstr='#E6FFFFFF');
+	      z-index: 999999999;
+	      -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+	      -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+	      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+	      -webkit-border-radius: 6px;
+	      -moz-border-radius: 6px;
+	      -ms-border-radius: 6px;
+	      -o-border-radius: 6px;
+	      border-radius: 6px;
+	      overflow: hidden;
+	      zoom: 1;
+	    }
     </style>
 
 	</head>
