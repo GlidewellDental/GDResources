@@ -192,7 +192,7 @@ $seal = get_field('seal');
         
         <!-- ***Code that is repeated for every repeater row -->
           
-        <li><a href="<?php echo $link; ?>" target="_blank"><?php echo $option; ?></a></li>
+        <li><a href="<?php echo $link['url']; ?>"><?php echo $option; ?></a></li>
           <?php endwhile; ?>
         
         <!-- ****Code and END divs if there are posts for this category -->
