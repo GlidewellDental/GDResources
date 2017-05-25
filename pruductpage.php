@@ -163,5 +163,6 @@ $seal = get_field('seal');
 </div>
 <?php endif; //if( get_sub_field('resource_tab') ): ?>
 <script type="text/javascript" src="http://gdresources.staging.wpengine.com/wp-content/themes/mauitoolbox/js/tab-responsive.js"></script> 
-
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <?php get_footer(); ?>
