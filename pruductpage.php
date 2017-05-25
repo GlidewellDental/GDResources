@@ -133,55 +133,86 @@ $seal = get_field('seal');
             
             
             
-<!--IFU REPEATER-->
+<!--REPEATER-->
 <?php 
-	$ifu_repeater = get_field('ifu_repeater');
+  $ifu_content = get_field('ifu_content');
 ?>
 
-<?php if( have_rows('ifu_repeater') ): ?>
-	
+<?php if( have_rows('ifu_content') ): ?>
+  
 <!-- ****Code and beginning divs -->
-<div class="col-sm-4 tab-pad">
-	<div class="object">
   
 
-	<?php 
-		$index = 0;  //optional
-		$question_count = count($ifu_repeater);
+  <?php 
+    $menunum = 0;  //optional
 
-		while( have_rows('ifu_repeater') ): the_row(); 
+    while( have_rows('ifu_content') ): the_row(); 
 
-		// variables within the repeater
-		$image = get_sub_field('image');
-		$title = get_sub_field('title');
-		$document = get_sub_field('document');
-		$language = get_sub_field('language');
+    // variables within the repeater
+    $ifu_title = get_sub_field('ifu_title');
+    $ifu_image = get_sub_field('ifu_image');
+    $ifu_option = get_sub_field('ifu_option');
+    $ifu_option_link = get_sub_field('ifu_option_link');
 
-		$index++;  //optional
-	?>
+    $menunum++;  //optional
+  ?>
 
 <!-- ***Code that is repeated for every repeater row -->
-		<img src="<?php echo $image; ?>" class="img-responsive">
-    <p><?php echo $title; ?></p>
-    <a href="javascript:;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      <button class="btn btn-sm btn-download dropdown-toggle" type="button">
-        <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> <span class="caret"></span>
-      </button>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top: -25px; width: 280px;">
-      <li><a href="<?php echo $document; ?>" target="_blank"><?php echo $language; ?></a></li>
-    </ul>
-  
+  <div class="col-sm-4 tab-pad">
+    <div class="object">
+      <img src="<?php echo $ifu_image['url']; ?>" alt="<?php echo $ifu_image['alt']; ?>" class="img-responsive">
+      <p><?php echo $ifu_title; ?></p>
+      <a href="javascript:;" id="dropdownMenu<?php echo $menunum; ?> " data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-primary dropdown-toggle" type="button" style="font-size: large; line-height: 30px; margin-top: -10px; width: 90%;">
+          Language Select <span class="caret"></span>
+        </button>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu<?php echo $menunum; ?> " style="margin-top: -75px; margin-left: 14px;">
+        <!--REPEATER-->
+        <?php 
+          $ifu_option = get_field('ifu_option');
+        ?>
+        
+        <?php if( have_rows('ifu_option') ): ?>
+          
+        <!-- ****Code and beginning divs -->
+          
+        
+          <?php 
+            $index = 0;  //optional
+        
+            while( have_rows('ifu_option') ): the_row(); 
+        
+            // variables within the repeater
+            $option = get_sub_field('option');
+            $link = get_sub_field('link');
+        
+            $index++;  //optional
+          ?>
+        
+        <!-- ***Code that is repeated for every repeater row -->
+          
+        <li><a href="<?php echo $link; ?>" target="_blank"><?php echo $option; ?></a></li>
+          <?php endwhile; ?>
+        
+        <!-- ****Code and END divs if there are posts for this category -->
+          
+        
+        <?php endif; ?>
+          
+        
 
-	<?php endwhile; ?>
+      </ul>
+    </div>
+  </div>
+
+  <?php endwhile; ?>
 
 <!-- ****Code and END divs if there are posts for this category -->
-	</div>
-</div>
   
 
 <?php endif; ?>
-<!--IFU REPEATER-->
+  
             
           
           
