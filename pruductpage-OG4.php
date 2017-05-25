@@ -123,65 +123,22 @@ $seal = get_field('seal');
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<!--IFU REPEATER-->
-<?php 
-	$ifu_repeater = get_field('ifu_repeater');
-?>
-
-<?php if( have_rows('ifu_repeater') ): ?>
-	
-<!-- ****Code and beginning divs -->
-<div class="col-sm-4 tab-pad">
-	<div class="object">
-  
-
-	<?php 
-		$index = 0;  //optional
-		$question_count = count($ifu_repeater);
-
-		while( have_rows('ifu_repeater') ): the_row(); 
-
-		// variables within the repeater
-		$image = get_sub_field('image');
-		$title = get_sub_field('title');
-		$document = get_sub_field('document');
-		$language = get_sub_field('language');
-
-		$index++;  //optional
-	?>
-
-<!-- ***Code that is repeated for every repeater row -->
-		<img src="<?php echo $image; ?>" class="img-responsive">
-    <p><?php echo $title; ?></p>
-    <a href="javascript:;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      <button class="btn btn-sm btn-download dropdown-toggle" type="button">
-        <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> <span class="caret"></span>
-      </button>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top: -25px; width: 280px;">
-      <li><a href="<?php echo $document; ?>" target="_blank"><?php echo $language; ?></a></li>
-    </ul>
-  
-
-	<?php endwhile; ?>
-
-<!-- ****Code and END divs if there are posts for this category -->
-	</div>
-</div>
-  
-
-<?php endif; ?>
-<!--IFU REPEATER-->
+            <!--IFU-->
+            <div class="col-sm-4 tab-pad">
+            	<div class="object">
+                <img src="http://dummyimage.com/400x300/f00/fff" class="img-responsive">
+                <p>Hahn Guided Surgery System</p>
+                <a href="javascript:;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <button class="btn btn-sm btn-download dropdown-toggle" type="button">
+                    <i class="fa fa-download" aria-hidden="true"></i> <strong>DOWNLOAD</strong> <span class="caret"></span>
+                  </button>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top: -25px; width: 280px;">
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Bulgarian.pdf" target="_blank">Bulgarian - български език - BG</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--IFU-->
             
           
           
