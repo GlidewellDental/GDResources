@@ -114,6 +114,43 @@ $seal = get_field('seal');
             <?php
               endwhile; //if( get_sub_field('tab_content') ):
               endif; //if( get_sub_field('tab_content') ):?>
+              
+            <!--IFU-->
+            <div class="col-sm-4 tab-pad">
+            	<div class="object">
+                <img src="http://dummyimage.com/400x300/f00/fff" class="img-responsive">
+                <a href="javascript:;" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <button class="btn btn-primary dropdown-toggle" type="button" style="font-size: large; line-height: 30px; margin-top: -10px; width: 90%;">
+                    TY TESTING <span class="caret"></span>
+                  </button>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top: -75px; margin-left: 14px;">
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Bulgarian.pdf" target="_blank">Bulgarian - български език - BG</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Croatian.pdf" target="_blank">Croatian - Hrvatski - HR</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Czech.pdf" target="_blank">Czech - Česky - CS</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Danish.pdf" target="_blank">Danish - Dansk - DA</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Dutch.pdf" target="_blank">Dutch - Nederlands - NL</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/English.pdf" target="_blank">English</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Estonian.pdf" target="_blank">Estonian - Eesti keel - ET</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/French.pdf" target="_blank">French - Français - FR</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/German.pdf" target="_blank">German - Deutsch - DE</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Greek.pdf" target="_blank">Greek - Ελληνικά -GR</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Hungarian.pdf" target="_blank">Hungarian - Magyar - HU</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Italian.pdf" target="_blank">Italian - Italiano - IT</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Latvian.pdf" target="_blank">Latvian - Latviešu - LV</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Lithuanian.pdf" target="_blank">Lithuanian - Lietuvių k - LT</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Polish.pdf" target="_blank">Polish - Polski - PL</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Portuguese-EU.pdf" target="_blank">Portuguese - Português - PT</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Romanian.pdf" target="_blank">Romanian - Română - RO</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Slovak.pdf" target="_blank">Slovak - Slovenčina - SK</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Spanish-EU.pdf" target="_blank">Spanish - Español - ES</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Swedish.pdf" target="_blank">Swedish - Svenska - SV</a></li>
+                  <li><a href="/downloads/Hahn-Guided-Surgery-System-IFU-6538/Turkish.pdf" target="_blank">Turkish - Türkçe - TR</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--IFU-->
+            
           </div>
         </div>
       
@@ -126,5 +163,5 @@ $seal = get_field('seal');
 </div>
 <?php endif; //if( get_sub_field('resource_tab') ): ?>
 <script type="text/javascript" src="http://gdresources.staging.wpengine.com/wp-content/themes/mauitoolbox/js/tab-responsive.js"></script> 
- 
+
 <?php get_footer(); ?>
