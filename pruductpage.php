@@ -163,11 +163,11 @@ $seal = get_field('seal');
       <img src="<?php echo $ifu_image['url']; ?>" alt="<?php echo $ifu_image['alt']; ?>" class="img-responsive">
       <p><?php echo $ifu_title; ?></p>
       <a href="javascript:;" id="dropdownMenu<?php echo $menunum; ?> " data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        <button class="btn btn-primary dropdown-toggle" type="button" style="font-size: large; line-height: 30px; margin-top: -10px; width: 90%;">
-          Language Select <span class="caret"></span>
+        <button class="btn btn-sm btn-download dropdown-toggle" type="button">
+          <i class="fa fa-download" aria-hidden="true"></i> <strong>SELECT LANGUAGE</strong> <span class="caret"></span>
         </button>
       </a>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu<?php echo $menunum; ?> " style="margin-top: -75px; margin-left: 14px;">
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu<?php echo $menunum; ?> " style="margin-top: -20px; width: 280px;">
         <!--REPEATER-->
         <?php 
           $ifu_option = get_field('ifu_option');
