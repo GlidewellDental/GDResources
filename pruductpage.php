@@ -201,6 +201,101 @@ $seal = get_field('seal');
           
           
 
+<<<<<<< HEAD
+      </ul>
+    </div>
+  </div>
+
+  <?php endwhile; ?>
+
+<!-- ****Code and END divs if there are posts for this category -->
+  
+
+<?php endif; ?>
+  
+            
+          
+<!--REPEATER-->
+<?php 
+  $ba_content = get_field('ba_content');
+?>
+
+<?php if( have_rows('ba_content') ): ?>
+  
+<!-- ****Code and beginning divs -->
+  
+
+  <?php 
+    $menunum = 0;  //optional
+
+    while( have_rows('ba_content') ): the_row(); 
+
+    // variables within the repeater
+    $ba_title = get_sub_field('ba_title');
+    $ba_image = get_sub_field('ba_image');
+    $ba_option = get_sub_field('ba_option');
+    $ba_option_link = get_sub_field('ba_option_link');
+
+    $menunum++;  //optional
+  ?>
+
+<!-- ***Code that is repeated for every repeater row -->
+  <div class="col-sm-4 tab-pad">
+    <div class="object">
+      <img src="<?php echo $ba_image['url']; ?>" alt="<?php echo $ba_image['alt']; ?>" class="img-responsive">
+      <p><?php echo $ba_title; ?></p>
+      <a href="javascript:;" id="dropdownMenu<?php echo $menunum; ?> " data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-sm btn-download dropdown-toggle" type="button">
+          <i class="fa fa-download" aria-hidden="true"></i> <strong>Before / After</strong> <span class="caret"></span>
+        </button>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu<?php echo $menunum; ?> " style="margin-top: -20px; width: 280px;">
+        <!--REPEATER-->
+        <?php 
+          $ba_option = get_field('ba_option');
+        ?>
+        
+        <?php if( have_rows('ba_option') ): ?>
+          
+        <!-- ****Code and beginning divs -->
+          
+        
+          <?php 
+            $index = 0;  //optional
+        
+            while( have_rows('ba_option') ): the_row(); 
+        
+            // variables within the repeater
+            $option = get_sub_field('option');
+            $link = get_sub_field('link');
+        
+            $index++;  //optional
+          ?>
+        
+        <!-- ***Code that is repeated for every repeater row -->
+          
+        <li><a href="<?php echo $link['url']; ?>"><?php echo $option; ?></a></li>
+          <?php endwhile; ?>
+        
+        <!-- ****Code and END divs if there are posts for this category -->
+          
+        
+        <?php endif; ?>
+          
+        
+
+      </ul>
+    </div>
+  </div>
+
+  <?php endwhile; ?>
+
+<!-- ****Code and END divs if there are posts for this category -->
+  
+
+<?php endif; ?>
+
+
           </div>
         </div>
       
