@@ -57,29 +57,7 @@ nav ul li a {
     border-top: solid 1px #303030;
 	background: #000;
 }
-ul {
-    margin-left: auto;
-    margin-right: auto;
-	padding: 0;
-    list-style-type: none;
-}
-ul li {
-	display: inline-block;
-	margin: 2px 8px 2px 0px;
-	
-}
-ul li a {
-	color: #fff;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    float: left;
-    padding-top: 1.618em;
-    padding-bottom: 1.618em;
-    padding-left: 1.618em;
-    padding-right: 0;
-}
+
 #menu-icon {
 	display: hidden;
 	width: 40px;
@@ -138,11 +116,64 @@ a.post-title-styles img {
 /* Footer
 ================= */
 footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #fff;
+  font-size: 13px;
+  background: #edeff0;
+  margin-top: 30px;
 }
-
+footer i {
+  color: #da2028;
+}
+footer ul {
+  list-style: none outside none;
+}
+footer ul li {
+  padding: 10px 0;
+}
+footer a {
+  color: #000;
+}
+.foot-btn {
+    line-height: 3em;
+    padding: 0 1em;
+    font-weight: 700;
+    background-color: #da2128;
+    color: #fff;
+    border: 1px solid #da2128;
+      -o-transition: .3s;
+      -ms-transition: .3s;
+      -moz-transition: .3s;
+      -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+    width: auto;
+}
+.foot-btn:hover {
+  background-color: #fff;
+  color: #da2128;
+}
+footer h3 {
+  font-weight: 400;
+  padding: 0;
+  font-size: 16px;
+  line-height: inherit;
+  color: #333;
+  text-transform: none;
+}
+.contact-info i {
+  color: #000;
+}
+.footer-bottom address {
+    float: right;
+    line-height: 40px;
+    margin: 0;
+}
+.footer-bottom {
+    background-color: #202020;
+    color: #a8a8a8;
+    min-height: 50px;
+    line-height: 40px;
+    padding: 25px 0;
+}
 /* Breadcrumb
 ================= */
 #breadcrumbs{
@@ -330,12 +361,6 @@ footer {
   border-top:none;
 }
 }
-li.active {
-    background-color: initial;
-}
-li {
-  background-color: #fff;
-}
 .nav-tabs>li>a {
     color: #337ab7;
     cursor: pointer;
@@ -386,11 +411,6 @@ h1 {
 
 a:focus {
 	color: #000 !important;
-}
-
-ul li a {
-	color: #337ab7;
-	padding-left: 0;
 }
 
 #breadcrumbs {
